@@ -1,0 +1,20 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    padding-top: 1rem;
+    margin-top: 3.5rem;
+}
+
+section {
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+}
