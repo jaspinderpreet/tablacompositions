@@ -8,12 +8,17 @@ input.addEventListener("keyup", (event) => {
     }
 })
 
+<<<<<<< HEAD
 let btn = document.querySelector('#btn');
 let taal = document.querySelector('#taal');
 btn.onclick = (event) => {
     event.preventDefault();
     alert(taal.value);
 };
+=======
+
+
+>>>>>>> 92b770655d1e19e502174ca404ade9a92f3ea59f
 /*
     This function stores a random bol in "bol_string", which index.html prints out
     Inputs:
