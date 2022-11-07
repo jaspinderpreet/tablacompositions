@@ -8,6 +8,8 @@ input.addEventListener("keyup", (event) => {
     }
 })
 
+
+
 /*
     This function stores a random bol in "bol_string", which index.html prints out
     Inputs:
