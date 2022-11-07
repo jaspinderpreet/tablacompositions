@@ -8,6 +8,12 @@ input.addEventListener("keyup", (event) => {
     }
 })
 
+let btn = document.querySelector('#btn');
+let taal = document.querySelector('#taal');
+btn.onclick = (event) => {
+    event.preventDefault();
+    alert(taal.value);
+};
 /*
     This function stores a random bol in "bol_string", which index.html prints out
     Inputs:
@@ -43,4 +49,9 @@ function getComposition(){
     }
     document.getElementById("bol_string").innerHTML = bol_string;   // return bol_string
 
+}
+
+function getTaal(){
+    var taal = document.querySelector('#taal');
+    alert(taal);
 }
