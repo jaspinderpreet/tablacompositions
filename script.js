@@ -1,7 +1,8 @@
 // code from https://blog.devgenius.io/how-to-detect-the-pressing-of-the-enter-key-in-a-text-input-field-with-javascript-380fb2be2b9e
 // checks if user presses enter, if they have we create a composition for them
-const input = document.querySelector("input");
+let input = document.querySelector("input");
 input.addEventListener("keyup", (event) => {
+    event.preventDefault()
     if (event.key === "Enter"){
         getComposition()
     }
