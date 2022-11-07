@@ -32,11 +32,11 @@ function getComposition(){
 
     // this loop gets two random bols and joins them together to form a matra
     for (var i = 0; i < matra; i++){
-        var random_int = Math.floor(Math.random() * num_bols);
+        var random_int = Math.floor(Math.random() * num_bols);  // gets random int bw 0 and number of bols - 1
         bol = bol_array[random_int];
         bol_string = bol_string + bol;
         
-        var random_int = Math.floor(Math.random() * num_bols);
+        var random_int = Math.floor(Math.random() * num_bols);  // gets random int bw 0 and number of bols - 1
         bol = bol_array[random_int];
         bol_string = bol_string + bol + " ";
     }
