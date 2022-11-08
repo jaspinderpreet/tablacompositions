@@ -16,45 +16,40 @@
 
     </head>
     <body>
-        <header>
-            <h1>Random Tabla Compositions</h1>
-            <img src="img/Harpreet_Sum.JPG" width="400">
-        </header>
+        <div class="container">
         <main>
-            <article>
-                <section>
+
+            <h1>Random Tabla Compositions</h1>
+                    <img src="img/Harpreet_Sum.JPG" alt="satguru ji">
+                    <div class="dropdown">
                     <!-- Dropdown menu -->
-                    <form action="#">
-                        <label for="taal">Choose a Taal: </label>
-                        <select name="taal" id="taal">
-                            <option value="8">Kherwa (8 Matra)</option>
-                            <option value="4">Double Kherwa (4 Matra)</option>
-                            <option value="6">Dadra (6 Matra)</option>
-                            <option value="3">Double Dadra (3 Matra)</option>
-                            <option value="7">Roopak (7 Matra)</option>
-                            <option value="10">Jhaptaal (10 Matra)</option>
-                            <option value="12">Iktaal/Chartaal (12 Matra)</option>
-                            <option value="14">Deepchandi/Dhamar (14 Matra)</option>
-                            <option value="16">Teental (16 Matra)</option>
-                        </select>
-                        <button id="btn">GO!</button>  
-                    </form>
-                   
-
-                    <!-- Custom Composition Handler -->
-                    <p>Enter in the Custom number of matras you want your composition to be:</p>
-                    <input type="text" size=1px id="matras">
-                    <button type="button" onclick="customBols();">GO!</button>
-                    <p>Your composition is: <span id="bol_string"></span></p>
-                    <p>Brought to you by Ustad Pritam Singh Basement Wale.</p>
-
-                    <script src="script.js"></script>
-                </section>
-            </article>
+                        <form action="#">
+                            <label for="taal">Choose a Taal: </label>
+                            <select name="taal" id="taal">
+                                <option value="8">Kherwa (8 Matra)</option>
+                                <option value="4">Double Kherwa (4 Matra)</option>
+                                <option value="6">Dadra (6 Matra)</option>
+                                <option value="3">Double Dadra (3 Matra)</option>
+                                <option value="7">Roopak (7 Matra)</option>
+                                <option value="10">Jhaptaal (10 Matra)</option>
+                                <option value="12">Iktaal/Chartaal (12 Matra)</option>
+                                <option value="14">Deepchandi/Dhamar (14 Matra)</option>
+                                <option value="16">Teental (16 Matra)</option>
+                            </select>
+                            <button id="btn">GO!</button>  
+                        </form>
+                    </div>
+                    <div class="custom">
+                        <!-- Custom Composition Handler -->
+                        <p>Enter in the Custom number of matras you want your composition to be:</p>
+                        <input type="text" size=1px id="matras">
+                        <button type="button" onclick="customBols();">GO!</button>
+                        <p>Your composition is: <span id="bol_string"></span></p>
+                        <p>Brought to you by Ustad Jaskirat Singh Badri Wale.</p>
+                    </div>
+                <script src="script.js"></script>
         </main>
-        <footer>
-
-        </footer> 
+        </div>
     </body>
 
 </html>
