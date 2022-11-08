@@ -1,31 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name = "description" content = "This is an awesome website">
-        <title>TablaCompositions</title>
-        <link rel="icon" type="image/x-icon" href="./img/colorkit.svg" />
-
-        <!-- Link to Stylesheet  -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <!-- Link to Google Fonts  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <div class="container">
-        <main>
-            <div class="logo-container">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="507.000000pt" height="323.000000pt" viewBox="0 0 507.000000 323.000000"
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,323.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="#cc872d" stroke="none">
 <path d="M3457 3190 c-32 -10 -62 -21 -65 -25 -4 -3 43 -3 103 1 61 3 121 7
 134 8 15 1 25 8 27 20 2 16 -2 17 -29 11 -35 -8 -39 -8 -82 -1 -16 2 -56 -4
 -88 -14z"/>
@@ -504,39 +485,4 @@ m14 -41 c-8 -5 -19 -10 -25 -10 -5 0 -3 5 5 10 8 5 20 10 25 10 6 0 3 -5 -5
 16 -4 16 -5 0 -12 -7 -15 -15z"/>
 <path d="M3250 823 c0 -13 5 -23 10 -23 13 0 13 11 0 30 -8 12 -10 11 -10 -7z"/>
 </g>
-                </svg>
-                <h1>Random Tabla Compositions</h1>
-            </div>
-                    <img src="img/Harpreet_Sum.JPG" alt="satguru ji">
-                    <div class="dropdown">
-                    <!-- Dropdown menu -->
-                        <form action="#">
-                            <label for="taal">Choose a Taal: </label>
-                            <select name="taal" id="taal">
-                                <option value="8">Kherwa (8 Matra)</option>
-                                <option value="4">Double Kherwa (4 Matra)</option>
-                                <option value="6">Dadra (6 Matra)</option>
-                                <option value="3">Double Dadra (3 Matra)</option>
-                                <option value="7">Roopak (7 Matra)</option>
-                                <option value="10">Jhaptaal (10 Matra)</option>
-                                <option value="12">Iktaal/Chartaal (12 Matra)</option>
-                                <option value="14">Deepchandi/Dhamar (14 Matra)</option>
-                                <option value="16">Teental (16 Matra)</option>
-                            </select>
-                            <button id="btn">GO!</button>  
-                        </form>
-                    </div>
-                    <div class="custom">
-                        <!-- Custom Composition Handler -->
-                        <p>Enter in the Custom number of matras you want your composition to be:</p>
-                        <input type="text" size=1px id="matras">
-                        <button type="button" onclick="customBols();">GO!</button>
-                        <p>Your composition is: <span id="bol_string"></span></p>
-                        <p>Brought to you by Ustad Jaskirat Singh Badri Wale.</p>
-                    </div>
-                <script src="script.js"></script>
-        </main>
-        </div>
-    </body>
-
-</html>
+</svg>
