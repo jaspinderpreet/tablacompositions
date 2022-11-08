@@ -40,6 +40,7 @@ function getComposition(matra, division){
     var bol_string = "<br>";                                       // initialize the string to be printed 
 
     // this loop gets two random bols and joins them together to form a matra
+    j = 0;
     for (var i = 0; i < matra; i++){
         var random_int = Math.floor(Math.random() * num_bols);  // gets random int bw 0 and number of bols - 1
         bol = bol_array[random_int];
@@ -50,9 +51,11 @@ function getComposition(matra, division){
         bol_string = bol_string + bol + " ";
 
         // if we are at the division stage, print a new line
-        if (i == division - 1){
+        if (j == division - 1){
+            j = -1;
             bol_string = bol_string + "<br>";
         }
+        j++;
     }
     document.getElementById("bol_string").innerHTML = bol_string;   // return bol_string
 
