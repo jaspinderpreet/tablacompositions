@@ -68,7 +68,6 @@ function customBols(){
     var matra = document.getElementById("matras").value;        // get number of matras from index.html
     division = Math.floor(matra / 2);
     getComposition(matra, division);        
-
 }
 
 /*
