@@ -1,43 +1,100 @@
 body {
-    background: url('../img/harpreet_background.webp') center;
     margin: 0 auto;
     text-align: center;
-    background-size: 100%;
-}
-
-
-img {
-    width: 60%;
-    border: thick double #ffffff;
-    margin-top: 0.25rem;
-    border-radius: 1rem;
 }
 
 .dropdown,
 .custom {
     font-family: 'Roboto Slab', serif;
-    background-color: rgba(194, 172, 126, 0.7);
+    font-weight: 700;
     padding: 0.5rem;
     border-radius: 1rem;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 70%;
+    margin: 0 auto;
+    font-variant: small-caps;
+}
+
+select,
+option,
+button,
+input {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+button {
+    border-radius: 0.5rem;
+}
+
+span {
+    color: rgb(204, 135, 45);
+    background-color: black;
+    font-variant: normal;
 }
 
 .dropdown {
     border-radius: 1rem 1rem 0 0;
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin-top: 1rem;
 }
 
 .custom {
     border-radius: 0 0 1rem 1rem;
+    padding-bottom: 2rem;
 }
 
 svg {
-    width: 60%;
-    margin-left: 1rem;
+    width: 15%;
+    margin-right: -6rem;
 }
 
 svg path {
     fill: rgb(204, 135, 45);
+}
+
+h1 {
+    font-size: 4rem;
+    width: 40rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+
+.text-box {
+    font-family: 'Roboto Slab', serif;
+    padding: 1rem;
+}
+
+.angle-bg {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(204, 135, 45);
+}
+
+.angle-bg::before,
+.angle-bg::after {
+    background-color: rgb(204, 135, 45);
+    content: "";
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.angle-bg::before {
+    top: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100% 0;
+}
+
+.angle-bg::after {
+    bottom: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
 }
 
 .logo-container {
@@ -45,14 +102,15 @@ svg path {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Roboto Slab', serif;
-    padding: 1rem;
     color: rgb(204, 135, 45);
     height: 6rem;
-    border-radius: 1rem;
     font-variant: small-caps;
-    margin-bottom: 1rem;
+    margin: 0 auto;
+    min-height: calc(100vh);
+    background: url('../img/ustad-sandip-ghosh-ji-svg-compressed.webp') bottom / cover no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 
@@ -60,11 +118,79 @@ svg path {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 28rem;
+    background: url('../img/ustad-sandip-ghosh-ji.webp') top / cover no-repeat;
     margin: 0 auto;
     margin-top: 1rem;
-    border-radius: 1rem;
-    max-height: 52rem;
+    min-height: calc(100vh);
+    background-attachment: fixed;
+    margin-top: -2rem;
+}
+
+.custom p:last-child {
+    margin-top: 5rem;
+    font-size: 1rem;
+    color: rgb(204, 135, 45);
+}
+
+.custom-matra {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.custom p:first-of-type {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-variant: normal;
+    color: rgb(146, 84, 65);
+    font-weight: 200;
+}
+
+.custom .custom-matra p {
+    font-size: 2rem;
+    font-variant: small-caps;
+    color: unset;
+    font-weight: unset;
+}
+
+@media screen and (max-width: 840px) {
+    .logo-container {
+        min-height: calc(40vh);
+        background: url('../img/ustad-sandip-ghosh-ji-svg-compressed.webp') top / cover no-repeat;
+    }
+
+    select {
+        width: 90%;
+    }
+
+    svg {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .logo-container {
+        flex-flow: column nowrap;
+    }
+
+    svg {
+        margin-right: unset;
+        position: absolute;
+        top: 4rem;
+    }
+
+    h1 {
+        width: 20rem;
+        font-size: 3rem;
+    }
+
+    .textbox p {
+        text-align: left;
+    }
 }
